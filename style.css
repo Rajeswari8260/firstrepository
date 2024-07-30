@@ -1,0 +1,499 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ------header start----- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px 35px;
+    letter-spacing: 1.5px;
+    position: fixed;
+    top: 0px;
+    z-index: 100000; 
+}
+
+header>h1{
+    font-size: 2.2em;
+}
+header span{
+    color: brown;
+}
+
+ul{
+    
+    display: flex;   
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;    
+}
+li:hover{
+    transform: scale(1.1);
+
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+.anchor:hover{    
+    color: white;
+    box-shadow: 0 0 5px brown,0 0 15px brown,0 0 25px brown,0 0 100px brown;
+    background:linear-gradient(brown,black);
+   
+}
+
+/* ----header end------ */
+
+/* ---banner start---- */
+#home{
+    height: 100vh;
+    padding: 30px;
+    margin-top: 100px;
+    
+}
+.content{
+    -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both;
+	        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both;
+
+}
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .btn-dark{
+     font-size: 1.2rem;
+     font-weight: 500;
+     margin: 10px ;
+     background-color: brown !important;
+  }
+  .btn-dark:hover{
+    background-color: black !important;
+  }
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin: 60px; 
+    padding: 40px 0 0 0;   
+}
+button{
+    align-items: center;
+}
+
+
+.content p{
+     font-size: 2em;
+     font-weight: 200;
+     padding: 30px 20px;
+     color: chocolate;
+     
+}
+
+
+ 
+.content h2{
+    padding: 30px 20px;
+    font-size: 3em;    
+}
+.content span{
+    color: brown;
+}
+/* -----animation start---- */
+.banner img{
+    -webkit-animation: puff-in-center 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1 both;
+	        animation: puff-in-center 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1 both;
+}
+@-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+  /* ---animation end--- */
+  
+/* ---banner end----- */
+
+/* ---About me--- */
+
+#about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 30px 0;
+    background-color: black;
+    color: white;
+}
+#about img{
+    height: 70vh;
+    width: 40%;
+
+    
+}
+
+.description{
+    padding: 10px 50px 0 0;
+}
+
+.description h1{
+    font-size: 4em;
+    font-weight: 900;
+      
+}
+.description p{
+    margin: 20px 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-between;
+    
+   
+    
+    
+}
+.stat h3{
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-top: 20px;    
+}
+.stat{
+    border-right: 3px solid black;
+    border-bottom: 3px solid black ;
+    margin-right: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 10px #888888;
+}
+.stat:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 10px brown ;
+}
+
+/* ----about me end-------- */
+
+#projects{
+    height: max-content;
+    gap: 20px;
+    
+    
+
+
+}
+
+.projo{
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap !important; 
+    gap: 60px;
+    padding: 0 30px;
+    
+    
+}
+
+.card {
+    max-width: fit-content;  
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 40px; 
+}
+.card:hover{
+    background-color: brown;
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+.card img{
+    transition: transform 0.5s;
+}
+
+.card img:hover{
+     transform: scale(1.1);
+
+}
+
+#projects>h1{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: brown;
+}
+/* ---projects page end----- */
+
+/* -----contact me page strt */
+
+#contact{
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    gap:85px;
+    background-color: black;
+    color: brown;
+    margin: 30px 0 0 0;
+    
+}
+.connect{
+    padding-bottom: 180px ;
+}
+.connect> h1{
+    font-size: 4em;
+    font-weight: 900;  
+}
+.connect> p{
+    font-size: 2em;
+    font-weight: 200;  
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+input{
+    height: 60px;
+    width: 500px; 
+    border-radius: 10px;       
+}
+textarea{
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.batana{
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 10rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: brown;
+    transition: transform 0.5s;
+}
+.batana:hover{
+    background-color: white;
+    transform: scale(0.8);
+    
+}
+
+/*    contact me page over  */
+
+
+
+
+
+@media(max-width:1025px) {
+    .banner img{
+        height: 485px;
+     } 
+    .content{
+        padding: 50px 0;
+    }
+     .content h2{
+        font-size: 2.5rem;    
+     }
+     
+     #about img{
+        height: 60vh;
+     }
+     .description{
+        padding: 34px 30px;
+     }
+
+}
+@media(max-width:769px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner img{
+        height: 45vh;
+        border-radius:50% ;
+    }
+    .content{
+        padding: 0;
+    }
+    .content h2{
+        padding: 0;
+    }
+    .content p{
+        padding: 10px 0;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+
+
+    #contact{  
+        display: flex;
+        flex-direction: column;  
+        width: 70%;
+        gap: 0px;
+        margin: 100px 0 0 0;
+        
+    }
+    .connect{
+        padding: 0 ;
+    }
+    .connect> h1{
+        font-size: 4em;
+        font-weight: 900;  
+    }
+    .connect> p{
+        font-size: 2em;
+        font-weight: 200;  
+    }
+    
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin:-100px 0;
+        
+    }
+    input{
+        height: 60px;
+        width: 500px; 
+        border-radius: 10px;       
+    }
+    textarea{
+        height: 25vh;
+        border-radius: 10px;
+    }
+    
+    #contact{
+        height: 100vh;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 100%;
+        gap:85px;
+        
+    }
+    .connect{
+        padding-bottom: 180px ;
+    }
+    .connect> h1{
+        font-size: 4em;
+        font-weight: 900;  
+    }
+    .connect> p{
+        font-size: 2em;
+        font-weight: 200;  
+    }
+    
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    input{
+        height: 60px;
+        width: 500px; 
+        border-radius: 10px;       
+    }
+    textarea{
+        height: 25vh;
+        border-radius: 10px;
+    }
+    
+    .batana{
+        font-size: 1.5rem;
+        padding: 15px;
+        width: 10rem;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: brown;
+        transition: transform 0.5s;
+    }
+
+}
+@media(max-width:426px) {
+       
+
+}
+@media(max-width:376px) {
+       
+
+}
+@media(max-width:321px) {
+       
+
+}
